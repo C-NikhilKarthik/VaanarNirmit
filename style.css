@@ -31,7 +31,7 @@
     transform: scale(1) translateY(0) translateX(0);
   }
   100% {
-    transform: scale(1.5) translateY(-95px) translateX(20px); /* Element stops at this state */
+    transform: scale(1.5) translateY(-55px) translateX(20px); /* Element stops at this state */
   }
 }
 @keyframes scaleAndMoveUp2 {
@@ -183,7 +183,7 @@ body {
   align-self: flex-end;
   padding-left: 3rem;
   font-family: "Nexa-ExtraLight";
-  max-width: 95%;
+  max-width: 70%;
   position: relative;
   padding-bottom: 2rem;
 }
@@ -194,24 +194,9 @@ body {
   text-transform: uppercase;
   font-size: 2rem;
   /* transform: translateY(-100%); */
-  margin-bottom: 2rem;
   position: absolute;
-  bottom: 1.5rem;
+  top: 0;
   animation: scaleAndMoveUp 1.5s forwards;
-}
-
-@media only screen and (max-width: 720px) {
-  .contact-info .about-info--header,
-  .contact-info .contact-info--header,
-  .about-info .about-info--header,
-  .about-info .contact-info--header {
-    text-transform: uppercase;
-    font-size: 2rem;
-    margin-bottom: 4rem;
-    position: absolute;
-    bottom: 4rem;
-    animation: scaleAndMoveUp 1.5s forwards;
-  }
 }
 
 .contact-info .about-info--text,
@@ -238,6 +223,7 @@ body {
 .about-info .icons img {
   width: 2rem;
   height: 2rem;
+  position: inherit;
   margin: 1rem 1rem 1rem 0;
   opacity: 0; /* Start with an initial opacity of 0 */
   animation: fadeIn 3s ease-in-out; /* Adjust duration and timing function as needed */
@@ -333,6 +319,8 @@ body {
 @media screen and (max-width: 480px) {
   .loader-container video {
     height: 100% !important;
+    -o-object-fit: cover;
+    object-fit: cover;
     right: 0 !important;
     bottom: 0 !important;
     position: absolute !important;
@@ -431,6 +419,7 @@ body {
   .whole-page-container .contact-info {
     align-self: flex-start !important;
     padding-bottom: 0 !important;
+    max-width: 95%;
     padding-left: 1.7rem !important;
     padding-top: 5rem !important;
   }
