@@ -363,7 +363,7 @@ body {
   }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1200px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1200px) and (orientation: portrait) {
   .whole-page-container .about,
   .whole-page-container .contact {
     height: calc(100% - 11rem) !important;
@@ -388,6 +388,41 @@ body {
   }
 }
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1200px) and (orientation: landscape) {
+  .whole-page-container .about,
+  .whole-page-container .contact {
+    height: calc(100% - 11rem) !important;
+  }
+  .whole-page-container .about-info,
+  .whole-page-container .contact-info {
+    align-self: flex-start !important;
+    padding-bottom: 0 !important;
+    max-width: 50%;
+    padding-left: 1.7rem !important;
+    padding-top: 5rem !important;
+  }
+  .whole-page-container .about-info--text,
+  .whole-page-container .contact-info--text {
+    animation-duration: 2s !important;
+  }
+  .whole-page-container .about-info--header,
+  .whole-page-container .contact-info--header {
+    position: static !important;
+    animation: none !important;
+    margin-bottom: 1rem !important;
+  }
+}
+
+@media screen and (max-width: 480px) and (orientation: landscape) {
+  .whole-page-container .about-info,
+  .whole-page-container .contact-info {
+    align-self: flex-start !important;
+    padding-bottom: 0 !important;
+    max-width: 50%;
+    padding-left: 1.7rem !important;
+    padding-top: 5rem !important;
+  }
+}
 @media screen and (max-width: 480px) {
   .loader-container video {
     height: 100% !important;
