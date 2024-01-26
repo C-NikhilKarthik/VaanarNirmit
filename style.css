@@ -313,7 +313,53 @@ body {
   background-position: center center;
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (min-width: 1600px) {
+  .work-info .work-info--header {
+    font-family: "Nexa-ExtraLight";
+    font-size: 3rem;
+  }
+  .work-info .work-info--artist {
+    font-family: "Nexa-Heavy";
+    font-size: 2rem;
+  }
+
+  .contact-info .about-info--header,
+  .contact-info .contact-info--header,
+  .about-info .about-info--header,
+  .about-info .contact-info--header {
+    text-transform: uppercase;
+    font-size: 4rem;
+    /* transform: translateY(-100%); */
+    position: absolute;
+    top: 0;
+    animation: scaleAndMoveUp 1.5s forwards;
+  }
+
+  .contact-info .about-info--text,
+  .contact-info .contact-info--text,
+  .about-info .about-info--text,
+  .about-info .contact-info--text {
+    text-transform: uppercase;
+    font-size: 2rem;
+    opacity: 0; /* Start with an initial opacity of 0 */
+    animation: fadeIn 5s ease-in-out; /* Adjust duration and timing function as needed */
+    animation-fill-mode: forwards; /* Retain the final state of the animation */
+  }
+
+  .whole-page-container .home-page-container .menu {
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 1rem;
+    padding-left: 3rem;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+  }
+
+  .whole-page-container .home-page-container .menu li a:hover {
+    color: white;
+    font-size: 3rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
