@@ -115,6 +115,7 @@ body {
 .loader-container video {
   -o-object-fit: cover;
   object-fit: cover;
+  object-position: right;
 }
 
 .landing-page-container {
@@ -359,6 +360,31 @@ body {
   .whole-page-container .home-page-container .menu li a:hover {
     color: white;
     font-size: 3rem;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1200px) {
+  .whole-page-container .about,
+  .whole-page-container .contact {
+    height: calc(100% - 11rem) !important;
+  }
+  .whole-page-container .about-info,
+  .whole-page-container .contact-info {
+    align-self: flex-start !important;
+    padding-bottom: 0 !important;
+    max-width: 95%;
+    padding-left: 1.7rem !important;
+    padding-top: 5rem !important;
+  }
+  .whole-page-container .about-info--text,
+  .whole-page-container .contact-info--text {
+    animation-duration: 2s !important;
+  }
+  .whole-page-container .about-info--header,
+  .whole-page-container .contact-info--header {
+    position: static !important;
+    animation: none !important;
+    margin-bottom: 1rem !important;
   }
 }
 
