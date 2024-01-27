@@ -181,12 +181,13 @@ body {
 
 .contact-info,
 .about-info {
-  align-self: flex-end;
+  align-self: flex-start !important;
   padding-left: 3rem;
   font-family: "Nexa-ExtraLight";
-  max-width: 70%;
   position: relative;
-  padding-bottom: 2rem;
+  padding-bottom: 0 !important;
+  max-width: 95%;
+  padding-top: 15rem !important;
 }
 .contact-info .about-info--header,
 .contact-info .contact-info--header,
@@ -196,7 +197,7 @@ body {
   font-size: 2rem;
   /* transform: translateY(-100%); */
   position: absolute;
-  top: 0;
+  /* top: 0; */
   animation: scaleAndMoveUp 1.5s forwards;
 }
 
@@ -267,7 +268,7 @@ body {
 .whole-page-container .contact,
 .whole-page-container .home-page-container {
   height: 100dvh;
-  width: 90%;
+  width: 50%;
   display: flex;
 }
 .whole-page-container .about .home-btn-container,
@@ -393,6 +394,16 @@ body {
   .whole-page-container .contact {
     height: calc(100% - 11rem) !important;
   }
+  .contact-info .about-info--text,
+  .contact-info .contact-info--text,
+  .about-info .about-info--text,
+  .about-info .contact-info--text {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    opacity: 0; /* Start with an initial opacity of 0 */
+    animation: fadeIn 5s ease-in-out; /* Adjust duration and timing function as needed */
+    animation-fill-mode: forwards; /* Retain the final state of the animation */
+  }
   .whole-page-container .about-info,
   .whole-page-container .contact-info {
     align-self: flex-start !important;
@@ -423,7 +434,13 @@ body {
     padding-top: 5rem !important;
   }
 }
-@media screen and (max-width: 480px) {
+
+@media screen and (max-width: 800px) {
+  .whole-page-container .about {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 600px) {
   .loader-container video {
     height: 100% !important;
     -o-object-fit: cover;
@@ -432,6 +449,7 @@ body {
     bottom: 0 !important;
     position: absolute !important;
   }
+
   .landing-page-container {
     height: 100% !important;
   }
