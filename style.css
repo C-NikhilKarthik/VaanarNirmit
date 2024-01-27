@@ -364,7 +364,7 @@ body {
   }
 }
 
-@media only screen and (min-device-width: 480px) and (max-device-width: 1200px) and (orientation: portrait) {
+@media only screen and (min-device-width: 300px) and (max-device-width: 1200px) and (orientation: portrait) {
   .whole-page-container .about,
   .whole-page-container .contact {
     height: calc(100% - 11rem) !important;
@@ -373,7 +373,7 @@ body {
   .whole-page-container .contact-info {
     align-self: flex-start !important;
     padding-bottom: 0 !important;
-    max-width: 95%;
+    max-width: 95% !important;
     padding-left: 1.7rem !important;
     padding-top: 5rem !important;
   }
@@ -389,7 +389,7 @@ body {
   }
 }
 
-@media only screen and (min-device-width: 480px) and (max-device-width: 1200px) and (orientation: landscape) {
+@media only screen and (min-device-width: 300px) and (max-device-width: 1200px) and (orientation: landscape) {
   .whole-page-container .about,
   .whole-page-container .contact {
     height: calc(100% - 11rem) !important;
@@ -399,7 +399,7 @@ body {
   .about-info .about-info--text,
   .about-info .contact-info--text {
     text-transform: uppercase;
-    font-size: 0.7rem;
+    font-size: 0.5rem;
     opacity: 0; /* Start with an initial opacity of 0 */
     animation: fadeIn 5s ease-in-out; /* Adjust duration and timing function as needed */
     animation-fill-mode: forwards; /* Retain the final state of the animation */
@@ -408,7 +408,7 @@ body {
   .whole-page-container .contact-info {
     align-self: flex-start !important;
     padding-bottom: 0 !important;
-    max-width: 50%;
+    max-width: 50% !important;
     padding-left: 1.7rem !important;
     padding-top: 5rem !important;
   }
@@ -420,6 +420,7 @@ body {
   .whole-page-container .contact-info--header {
     position: static !important;
     animation: none !important;
+    font-size: 1.6rem;
     margin-bottom: 1rem !important;
   }
 }
