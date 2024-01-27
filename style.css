@@ -364,7 +364,7 @@ body {
   }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1200px) and (orientation: portrait) {
+@media only screen and (min-device-width: 480px) and (max-device-width: 1200px) and (orientation: portrait) {
   .whole-page-container .about,
   .whole-page-container .contact {
     height: calc(100% - 11rem) !important;
@@ -389,7 +389,7 @@ body {
   }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1200px) and (orientation: landscape) {
+@media only screen and (min-device-width: 480px) and (max-device-width: 1200px) and (orientation: landscape) {
   .whole-page-container .about,
   .whole-page-container .contact {
     height: calc(100% - 11rem) !important;
