@@ -423,7 +423,7 @@ body {
   .whole-page-container .contact-info {
     align-self: flex-start !important;
     padding-bottom: 0 !important;
-    max-width: 100% !important;
+    max-width: 70% !important;
     padding-left: 1.7rem !important;
     padding-top: 5rem !important;
   }
