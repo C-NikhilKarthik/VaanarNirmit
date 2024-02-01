@@ -211,6 +211,10 @@ body {
   animation: fadeIn 5s ease-in-out; /* Adjust duration and timing function as needed */
   animation-fill-mode: forwards; /* Retain the final state of the animation */
 }
+
+.menu ul {
+  padding-left: 0;
+}
 .contact-info .contact-info--header,
 .about-info .contact-info--header {
   margin-bottom: 0 !important;
@@ -377,6 +381,9 @@ body {
   .whole-page-container .contact {
     height: calc(100% - 11rem) !important;
   }
+  .menu ul {
+    padding-left: 0;
+  }
 
   .work-info .work-info--artist {
     font-family: "Nexa-Heavy";
@@ -406,6 +413,10 @@ body {
   .whole-page-container .about,
   .whole-page-container .contact {
     height: calc(100% - 11rem) !important;
+  }
+
+  .menu ul {
+    padding-left: 1.5rem;
   }
   .whole-page-container .home-page-container .menu {
     height: auto !important;
