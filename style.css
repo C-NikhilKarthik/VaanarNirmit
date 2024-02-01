@@ -214,7 +214,7 @@ body {
 .contact-info .contact-info--header,
 .about-info .contact-info--header {
   margin-bottom: 0 !important;
-  animation: scaleAndMoveUp2 2s forwards !important;
+  animation: scaleAndMoveUp 2s forwards !important;
 }
 .contact-info .contact-info--text,
 .about-info .contact-info--text {
@@ -364,10 +364,24 @@ body {
   }
 }
 
+#linkedIn {
+  margin-left: 0.4rem;
+}
+
 @media only screen and (min-device-width: 300px) and (max-device-width: 1200px) and (orientation: portrait) {
   .whole-page-container .about,
   .whole-page-container .contact {
     height: calc(100% - 11rem) !important;
+  }
+  .work-info .work-info--header {
+    font-family: "Nexa-ExtraLight";
+    font-size: 1.3rem;
+    max-width: 50%;
+  }
+
+  .work-info .work-info--artist {
+    font-family: "Nexa-Heavy";
+    font-size: 0.8rem;
   }
   .whole-page-container .about-info,
   .whole-page-container .contact-info {
@@ -375,7 +389,7 @@ body {
     padding-bottom: 0 !important;
     max-width: 95% !important;
     padding-left: 3rem !important;
-    padding-top: 5rem !important;
+    padding-top: 7rem !important;
   }
   .whole-page-container .about-info--text,
   .whole-page-container .contact-info--text {
@@ -393,6 +407,13 @@ body {
   .whole-page-container .about,
   .whole-page-container .contact {
     height: calc(100% - 11rem) !important;
+  }
+  .whole-page-container .home-page-container .menu {
+    height: auto !important;
+    align-items: flex-start !important;
+    padding-bottom: 0 !important;
+    padding-left: 0 !important;
+    padding-top: 6rem !important;
   }
   .whole-page-container .about .home-btn-container,
   .whole-page-container .contact .home-btn-container {
@@ -415,6 +436,7 @@ body {
   .about-info .contact-info--text {
     /* text-transform: uppercase; */
     font-size: 0.8rem;
+    max-width: 70%;
     opacity: 0; /* Start with an initial opacity of 0 */
     animation: fadeIn 5s ease-in-out; /* Adjust duration and timing function as needed */
     animation-fill-mode: forwards; /* Retain the final state of the animation */
@@ -588,7 +610,7 @@ body {
     padding-bottom: 0 !important;
     max-width: 95%;
     padding-left: 1.7rem !important;
-    padding-top: 5rem !important;
+    padding-top: 7rem !important;
   }
   .whole-page-container .about-info--text,
   .whole-page-container .contact-info--text {
