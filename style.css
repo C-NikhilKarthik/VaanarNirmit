@@ -291,7 +291,7 @@ body {
   bottom: 0;
   right: 0;
   transform-origin: bottom right;
-  max-width: 25rem;
+  width: clamp(15rem, 10vw, 25rem);
 }
 
 .scale-down-logo {
