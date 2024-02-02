@@ -408,8 +408,16 @@ body {
     margin-bottom: 1rem !important;
   }
 }
-
-@media only screen and (min-device-width: 300px) and (max-device-width: 1200px) and (orientation: landscape) {
+@media only screen and (min-device-width: 1000px) and (max-device-width: 1600px) and (orientation: landscape) {
+  .whole-page-container .home-page-container .menu {
+    height: auto !important;
+    align-items: flex-end !important;
+    padding-bottom: 0 !important;
+    padding-left: 3rem !important;
+    padding-top: 6rem !important;
+  }
+}
+@media only screen and (min-device-width: 300px) and (max-device-width: 999px) and (orientation: landscape) {
   .whole-page-container .about,
   .whole-page-container .contact {
     height: calc(100% - 11rem) !important;
