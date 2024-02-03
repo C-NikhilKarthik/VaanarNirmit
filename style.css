@@ -408,7 +408,7 @@ body {
     margin-bottom: 1rem !important;
   }
 }
-@media only screen and (min-device-width: 1000px) and (max-device-width: 1600px) and (orientation: landscape) {
+@media only screen and (min-device-width: 1000px) and (max-device-width: 2400px) and (orientation: landscape) {
   .whole-page-container .home-page-container .menu {
     height: auto !important;
     align-items: flex-end !important;
